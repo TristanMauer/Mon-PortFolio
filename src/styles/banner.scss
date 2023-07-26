@@ -1,0 +1,89 @@
+@import './utils/_variables.scss';
+@import './utils/_mixins.scss';
+
+.banner_conteneur{
+    @include flex(row, center);
+    position: relative;
+    padding: 1em;
+    margin-top: 10em;
+    width: 80%;
+    height: 600px;
+    background-color: $color-quaternary  ;
+}
+.banner_profil{
+
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+.form_design{
+    z-index: 1;
+    left: 25%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    height:300px;
+    width: 300px;
+    position: absolute;
+    opacity: 0.5;
+    background: #B7D3DF;
+    border-radius: 26% 74% 54% 46% / 33% 28% 72% 67%;
+
+    @media screen and (max-width: 767px) {
+        height:225px;
+        width:225px;
+        right: 35%;
+        top:70%;
+        transform: translate(-15%, -45%);
+        
+        
+    }
+}
+.conteneur-p{
+    position: relative;
+    max-width: 600px;
+}
+
+ 
+.banner_p {
+    position: relative;
+    z-index: 2;
+    font-size: 40px;
+    margin-right: 3em;
+    color: white;
+
+    
+}
+
+@media screen and (max-width:998px) {
+    .banner_conteneur{
+        width: 100%;
+        height: 350px;
+    }
+    .banner_profil{
+        width: 250px;
+        height: 250px; 
+    }
+    .banner_p{
+        font-size: 35px;
+        
+    }
+    
+}
+
+@media screen and (max-width:767px) {
+    .banner_conteneur{
+        @include flex(column-reverse, flex-end);
+        width: 100%;
+        height:600px;
+    }
+    .banner_p{
+        font-size: 30px;
+        margin: 43px auto;
+    }
+    .banner_profil{
+        margin-top: 3em;
+    }
+    
+}

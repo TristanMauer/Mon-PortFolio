@@ -1,0 +1,18 @@
+[
+    {
+        "tag": "TOUS",
+        "categoryId":0
+    },
+    {   
+        "tag":"HTML/CSS",
+        "categoryId":1
+    },
+    {
+        "tag":"REACT",
+        "categoryId":2
+    },
+    {
+        "tag":"NODE",
+        "categoryId":3
+    }
+]

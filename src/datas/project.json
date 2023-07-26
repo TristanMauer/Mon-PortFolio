@@ -1,0 +1,90 @@
+[
+    {
+    "id": 1,
+    "title":"Booki",
+    "legend":" Trouvez votre hébergement pour des vacances de rêve",
+    "mission": "Projet réaliser lors de ma formation OpenClassroom.",
+    "description":"La mission consitais à créer une application web de location d'hôtels",
+    "images":"/images/Booki.webp",
+    "pictures": [
+        "/images/Booki_carousel.webp",
+        "/images/Booki_carousel2.webp"
+    ],
+    "categoryId":1,
+    "tags":["HTML",
+            "CSS"
+           ]
+},
+
+{
+    "id": 2,
+    "title":"Shophie Bluel, Architecte d'intérieur",
+    "mission": "Projet réaliser lors de ma formation OpenClassroom.",
+    "description":"La mission consitais à créer le portfolio avec un CMS personnalisé permettant à l'architecte d'ajouter modifier ou encore supprimer ses projets, sur le site l'utilisateur avais la possibilité de filtrer les projets de l'architecte. ",
+    "images":"/images/sophie_carousel.webp",
+    "pictures": [
+        "/images/sophie_carousel.webp",
+        "/images/sophie_carousel2.webp",
+        "/images/sophie_carousel3.webp"
+    ],
+    "categoryId":1,
+    "tags":["HTML",
+            "CSS",
+            "JAVASCRIPT"]
+},
+
+{
+    "id": 3,
+    "title":"Nina Carducci, photographe",
+    "mission": "Projet réaliser lors de ma formation OpenClassroom.",
+    "description":"Sur cette mission mon rôle consistais à corriger les différents bug rencontrer mais aussi d'optimiser le site afin de le rendre plus performant et plus accessibles, le SEO as aussi était ajouter afin d'optimiser le référencement locale de la photographe. ",
+    "images":"/images/nina.webp",
+    "pictures": [
+        "/images/nina_carousel.webp",
+        "/images/nina_carousel2.webp",
+        "/images/nina_carousel3.webp",
+        "/images/nina_carousel4.webp"
+    ],
+    "categoryId":1,
+    "tags": [
+        "HTML",
+        "CSS",
+        "JS",
+        "SEO"
+    ]
+},
+{
+    "id": 4,
+    "title":"Kasa",
+    "mission": "Chez vous est partout ailleur.",
+    "description":"La mission consistais à créer une application web de location immobilière en utilisant React. ",
+    "images":"/images/kasa.webp",
+    "pictures":[
+        "/images/kasa_carousel.webp",
+        "/images/kasa_carousel2.webp",
+        "/images/kasa_carousel3.webp"
+    ],
+    "categoryId":2,
+    "tags":["REACT",
+            "SASS"]
+},
+
+{
+    "id": 5,
+    "title":"Mon Vieux Grimoire",
+    "mission": "Projet réaliser lors de ma formation OpenClassroom.",
+    "description":"J'ai eu pour mission de créer la partie backend du site en utilisant Node et express.L'API REST permet l'ajout la modification et la supression de livre.",
+    "images":"/images/Mon-Vieux-grimoire.webp",
+    "pictures":[
+        "/images/mvg_carousel.webp",
+        "/images/mvg_carousel2.webp",
+        "/images/mvg_carousel3.webp"
+    ],
+    "categoryId":3,
+    "tags": [
+        "NODE",
+        "EXPRESS",
+        "MONGODB"
+    ]
+}
+]

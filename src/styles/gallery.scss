@@ -1,0 +1,33 @@
+@import './utils/_mixins';
+@import './utils/variables';
+
+
+.gallery {
+       
+    display:grid;
+    grid: auto-flow /600px 600px;
+    justify-content: center;
+    gap:30px;
+    margin:  0 auto;
+    
+    &.invisble{
+      display: none;
+    }
+ 
+    @media screen and (max-width: 1300px) {
+        grid: auto-flow /450px 450px;
+    }
+    
+    
+   @media screen and (max-width: 998px) {
+  
+      grid: auto-flow / 1fr;
+      width: 90%;
+      background:none;
+    }
+    
+}
+.title_projet{
+  @include flex (center);
+  margin-top:2em;
+}

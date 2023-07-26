@@ -1,0 +1,55 @@
+@import './utils/_variables.scss';
+@import './utils/_mixins.scss';
+
+
+
+.apropos_conteneur{
+    @include flex(column,center);
+    
+    margin:4em 2em 2em 2em;
+    padding: 5em;
+    @media screen and (max-width:700px) {
+        padding: 0;
+    }
+
+}
+.apropos_centrage{
+    text-align: center;
+    width: 650px;
+     @media  screen and (max-width: 700px) {
+        width: 83.33333333%;
+        
+     }
+}
+.apropos_titre{
+    position: relative;
+    z-index: 1;
+}
+.apropos_p {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 3em;
+}
+.form{
+    z-index: 0;
+    height:300px;
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    background: #DEB6AB;
+    border-radius:77% 23% 75% 25% / 54% 43% 57% 46%  ;
+    
+    @media screen and (max-width:767px) {
+        width: 250px;
+        height: 250px;
+        
+    }
+}
+.apropos_from_conteneur{
+    position: relative;
+}

@@ -1,0 +1,25 @@
+@import './utils/_variables.scss';
+@import './utils/_mixins.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+body{
+    font-size: 1.0825rem;
+}
+
+button{
+    background-color: $color-quinternary;
+    &:hover{
+        background-color: $color-secondary;
+        cursor: pointer;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+

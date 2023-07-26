@@ -1,0 +1,38 @@
+@import './utils/_variables.scss';
+@import './utils/_mixins.scss';
+
+.filtre{
+    @include flex(center);
+    margin: 3em;   
+    padding: 3em;
+
+    &_bouton{
+        padding: 1em;
+        border-radius: 30px;
+        background-color: $color-quinternary;
+        color: white;
+        border: none;
+        margin-left: 1em;
+        font-size: 17px;
+       font-weight: bold;
+       width: 200PX;
+    }
+   
+}
+
+@media screen and (max-width:900px) {
+    .filtre_bouton{
+        width: 100px;
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+    .filtre_bouton{
+        width: 80px;
+        font-size: 12px;
+    }
+
+    
+}

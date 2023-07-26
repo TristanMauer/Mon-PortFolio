@@ -1,0 +1,25 @@
+@import './utils/_variables.scss';
+@import './utils/_mixins.scss';
+
+.footer_conteneur {
+    width: 100%;
+    @include flex(row, center);
+    background-color: $color-quaternary;
+    min-height: 100px;
+  }
+  
+  .footer_icons {
+    background: none;
+    border: none;
+    @include flex(center);
+    color: white;
+    padding: 1em;
+  
+    font-size: $icon-size; // Utilisez la variable pour définir la taille de l'icône
+  }
+
+  .footer_icons:hover{
+    cursor: pointer;
+    background:none;
+    color: $color-quinternary;
+  }
