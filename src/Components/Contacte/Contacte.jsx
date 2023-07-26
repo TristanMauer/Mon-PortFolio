@@ -37,7 +37,7 @@ function Contacte() {
   return (
     <section className="conteneur" id="contacte">
       <h1 className="title-contacte"> Me Contacter</h1>
-      <form  className="form_container" action="/envoyer-email" method="post" onSubmit={handleSubmit}>
+      <form  className="form_container"  method="post" onSubmit={handleSubmit} netlify>
               <label className="form_label">
                 Nom:
                 <input
