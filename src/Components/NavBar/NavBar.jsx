@@ -8,9 +8,9 @@ function NavBar(){
         setShowLinks(!showLinks)
     }
     return(
-        <nav className="nav_bar show_nav">
+        <nav className={`nav_bar ${showLinks ? "show_nav" : "hide-nav"}`}>
         <div className="nav_logo"><img className="logo" src="../../images/logo.png" alt="logo"/></div>
-         <ul className={`${showLinks ? "nav_links" : "hidden"}`}>
+         <ul className= "nav_links" >
             <li className="nav_item">
                 <a href="#apropos" className="nav_link">
                     A propos
@@ -34,8 +34,7 @@ function NavBar(){
         </ul>
         <button className="nav_burger" onClick={handleShowLinks}>
             <span className="burger-bar"></span>
-            <span className="burger-bar"></span>
-            <span className="burger-bar"></span>
+            
 
         </button>
 

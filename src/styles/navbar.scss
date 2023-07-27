@@ -32,21 +32,23 @@
     }
 
     @media  screen and  ( max-width:767px) {
-        .hidden{
-            display: none;
-        }
         .nav_links {
             @include flex(row);
             flex-direction: column;
             justify-content: center;
             position: fixed;
-            right: 0;
+            right: -100vw;
             bottom: 0;
-            width: 100%;
+            visibility: hidden;
             height: 100vh;
             background-color: $color-quaternary;
             
         }
+       .show_nav .nav_links{
+        right: 0;
+        width: 100%;
+        visibility: visible;
+       }
         .nav_link {
             display: block;
             padding: 1.5rem;
@@ -54,25 +56,45 @@
         }
         .nav_burger{
             display: flex;
-            position: relative;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             background: transparent;
             border: none;
             cursor: pointer;
-            padding: 10px;
-
+            padding: 3em;
         }
         .nav_burger:hover{
+            background: none;
             cursor: pointer;
         }
-        .burger-bar {
-            width: 30px;
-            height: 3px;
+        .burger-bar, .burger-bar::before, .burger-bar::after {
+            display: block;
+            width:40px;
+            height: 4px;
+            position: relative;
+            border-radius: 3px;
+            
             background-color: #000;
-            margin-bottom: 5px;
-            transition: background-color 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
           }
-      
+          .burger-bar::before, .burger-bar::after{
+            content: "";
+            position:absolute;
+            left: 0;
+          }
+          .burger-bar::before{
+            transform: translateY(-12px);
+          }
+          .burger-bar::after{
+            transform: translateY(12px);
+          }
+
+          .show_nav .burger-bar{
+            
+            background: transparent;
+          }
+          .show_nav .burger-bar::before{
+            transform: rotate(45deg);
+          }
+          .show_nav .burger-bar::after{
+            transform: rotate(-45deg);
+          }
     }
