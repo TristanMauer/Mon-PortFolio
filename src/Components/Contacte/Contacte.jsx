@@ -37,45 +37,29 @@ function Contacte() {
   return (
     <section className="conteneur" id="contacte">
       <h1 className="title-contacte"> Me Contacter</h1>
-      <form  name="contacte" className="form_container"  method="post" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact"/>
-              <label className="form_label">
-                Nom:
-                <input
-                  for="nom"
-                  type="text"
-                  name="nom"
-                  placeholder="Nom"
-                  className="form_input"
-                  required
-                />
-              </label>
-              <br />
-              <label className="form_label">
-                Email:
-                <input
-                  for="email"
-                  type="email"
-                  name="email"
-                  placeholder="email"
-                  className="form_input"
-                  required
-                />
-              </label>
-              <br />
-              <label className="form_label">
-                Message:
-                <textarea
-                  for="message"
-                  name="message"
-                  placeholder="Votre message"
-                  required
-                  className="form_input"
-                />
-              </label>
-              <br />
-              <button type="submit" className="form_button">Envoyer</button>
-            </form>
+      <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact"/>
+
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+
     </section>
   );
 }
