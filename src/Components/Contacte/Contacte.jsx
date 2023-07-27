@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 function Contacte() {
-  const [formData, setFormData] = useState({
+  /*const [formData, setFormData] = useState({
     nom: '',
     email: '',
     message: '',
@@ -17,7 +17,7 @@ function Contacte() {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(formData);
-
+}
     // Envoi des données du formulaire au backend Node.js
     axios.post('http://localhost:4000/envoyer-email', formData)
       .then((response) => {
@@ -32,20 +32,20 @@ function Contacte() {
       .catch((error) => {
         console.error(error);
       });
-  };
+  ;*/
 
   return (
     <section className="conteneur" id="contacte">
       <h1 className="title-contacte"> Me Contacter</h1>
-      <form  className="form_container"  method="post" onSubmit={handleSubmit} netlify>
+      <form  className="form_container"  method="post" data-netlify="true">
               <label className="form_label">
                 Nom:
                 <input
                   type="text"
                   name="nom"
-                  value={formData.nom}
-                  onChange={handleChange}
+                  placeholder="Nom"
                   className="form_input"
+                  required
                 />
               </label>
               <br />
@@ -54,9 +54,9 @@ function Contacte() {
                 <input
                   type="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
+                  placeholder="email"
                   className="form_input"
+                  required
                 />
               </label>
               <br />
@@ -64,8 +64,8 @@ function Contacte() {
                 Message:
                 <textarea
                   name="message"
-                  value={formData.message}
-                  onChange={handleChange}
+                  placeholder="Votre message"
+                  required
                   className="form_input"
                 />
               </label>
