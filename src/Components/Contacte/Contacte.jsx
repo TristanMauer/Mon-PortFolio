@@ -37,10 +37,12 @@ function Contacte() {
   return (
     <section className="conteneur" id="contacte">
       <h1 className="title-contacte"> Me Contacter</h1>
-      <form  className="form_container"  method="post" data-netlify="true">
+      <form  name="contacte" className="form_container"  method="post" data-netlify="true" onSubmit="submit">
+        <input type="hidden" name="form-name" value="contact"/>
               <label className="form_label">
                 Nom:
                 <input
+                  for="nom"
                   type="text"
                   name="nom"
                   placeholder="Nom"
@@ -52,6 +54,7 @@ function Contacte() {
               <label className="form_label">
                 Email:
                 <input
+                  for="email"
                   type="email"
                   name="email"
                   placeholder="email"
@@ -63,6 +66,7 @@ function Contacte() {
               <label className="form_label">
                 Message:
                 <textarea
+                  for="message"
                   name="message"
                   placeholder="Votre message"
                   required
