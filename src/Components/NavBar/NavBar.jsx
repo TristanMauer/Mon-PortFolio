@@ -32,7 +32,7 @@ function NavBar(){
                 </a>
             </li>
         </ul>
-        <button className="nav_burger" onClick={handleShowLinks}>
+        <button className="nav_burger" aria-label="bouton-burger" onClick={handleShowLinks}>
             <span className="burger-bar"></span>
             
 

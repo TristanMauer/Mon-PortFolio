@@ -14,9 +14,9 @@ function Footer(){
       const emailAddress = 'raykoten@gmail.com';
     return(
         <div className='footer_conteneur'>
-          <button onClick={handleGithubInRedirect} className='footer_icons'> <FaGithub /></button>
-          <button onClick={handleLinkedInRedirect}  className='footer_icons'> <FaLinkedin  /></button>
-        <a href={`mailto:${emailAddress}`} className='footer_icons'> <FaEnvelope  /></a>
+          <button onClick={handleGithubInRedirect} className='footer_icons' aria-label="bouton vers mon github"> <FaGithub /></button>
+          <button onClick={handleLinkedInRedirect}  className='footer_icons' aria-label="bouton vers mon linkedin"> <FaLinkedin  /></button>
+        <a href={`mailto:${emailAddress}`} className='footer_icons' aria-label="Envoyer moi un mail à cette adresse"> <FaEnvelope  /></a>
         </div>
     )
 }

@@ -74,7 +74,7 @@ function Contacte() {
                 />
               </label>
               <br />
-              <button type="submit" className="form_button">Envoyer</button>
+              <button type="submit" aria-label="ce bouton permet de m'envoyer le formulaire" className="form_button">Envoyer</button>
             </form>
     </section>
   );
