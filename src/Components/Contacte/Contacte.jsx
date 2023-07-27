@@ -37,25 +37,45 @@ function Contacte() {
   return (
     <section className="conteneur" id="contacte">
       <h1 className="title-contacte"> Me Contacter</h1>
-      <form name="contact" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="contact"/>
-
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
-
+      <form  name="contact" method="POST" data-netlify="true" className="form_container">
+      <input aria-label="contact" type="hidden" name="form-name" value="contact" />
+              <label className="form_label">
+                Nom:
+                <input
+                  aria-label="nom"
+                  type="text"
+                  name="nom"
+                  placeholder="Nom"
+                  className="form_input"
+                  required
+                />
+              </label>
+              <br />
+              <label className="form_label">
+                Email:
+                <input
+                  aria-label="email"
+                  type="email"
+                  name="email"
+                  placeholder="email"
+                  className="form_input"
+                  required
+                />
+              </label>
+              <br />
+              <label className="form_label">
+                Message:
+                <textarea
+                  aria-label="message"
+                  name="message"
+                  placeholder="Votre message"
+                  required
+                  className="form_input"
+                />
+              </label>
+              <br />
+              <button type="submit" className="form_button">Envoyer</button>
+            </form>
     </section>
   );
 }
