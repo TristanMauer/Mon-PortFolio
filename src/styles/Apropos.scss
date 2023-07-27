@@ -25,12 +25,18 @@
     position: relative;
     z-index: 1;
 }
+
 .apropos_p {
     z-index: 1;
+    font-size: 23px;
     position: relative;
     text-align: center;
     flex-wrap: wrap;
-    margin-top: 3em;
+    margin-top: 1em;
+
+    @media screen and ( max-width:763px) {
+        font-size: 17px;
+    }
 }
 .form{
     z-index: 0;
@@ -52,4 +58,5 @@
 }
 .apropos_from_conteneur{
     position: relative;
+    margin-top: 3em;
 }

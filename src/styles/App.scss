@@ -13,6 +13,7 @@ body{
 
 button{
     background-color: $color-quinternary;
+    color: black;
     &:hover{
         background-color: $color-secondary;
         cursor: pointer;
