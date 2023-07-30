@@ -4,7 +4,7 @@
 .footer_conteneur {
     width: 100%;
     @include flex(row, center);
-    background-color: $color-quaternary;
+    background-color: $color-quinternary;
     min-height: 100px;
   }
   
@@ -21,5 +21,5 @@
   .footer_icons:hover{
     cursor: pointer;
     background:none;
-    color: $color-quinternary;
+    color:$color-secondary;
   }
