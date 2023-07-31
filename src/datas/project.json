@@ -56,7 +56,8 @@
 {
     "id": 4,
     "title":"Kasa",
-    "mission": "Chez vous est partout ailleur.",
+    "legend": "Chez vous est partout ailleur.",
+    "mission": "Projet réaliser lors de ma formation OpenClassroom.",
     "description":"La mission consistais à créer une application web de location immobilière en utilisant React. ",
     "images":"/images/kasa.webp",
     "pictures":[
