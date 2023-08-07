@@ -1,10 +1,15 @@
 import "../../styles/card.scss";
 import React, { useState } from "react";
 import {FaArrowRight } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import Carousel from "../../Components/Carousel/Carousel";
 
-function Card({ id, title, cover, categoryId, mission, description, pictures, tags, legend }) {
+function Card({ id, title, cover, categoryId, mission, description, pictures, tags, legend, github }) {
   const [modalOpen, setModalOpen] = useState(false);
+
+  const handleGithubInRedirect = () => {
+    window.open(`${github}`, '_blank');
+  };
 
   const openModal = () => {
     setModalOpen(true);
@@ -35,6 +40,7 @@ function Card({ id, title, cover, categoryId, mission, description, pictures, ta
           <div className="modal-contenu">
             <p className="modal-texte">{mission}</p>
             <p className="modal-texte">{description}</p>
+            <button onClick={handleGithubInRedirect} className='modal_icon' aria-label="bouton vers mon github"> <FaGithub /></button>
             <div className="conteneur-tags">
             {renderTags()}
             </div>

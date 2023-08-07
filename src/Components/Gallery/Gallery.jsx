@@ -46,6 +46,7 @@ function Gallery() {
                         pictures={project.pictures}
                         tags={project.tags}
                         legend={project.legend}
+                        github={project.github}
                         />
                 
             ))}

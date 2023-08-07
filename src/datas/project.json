@@ -6,6 +6,7 @@
     "mission": "Projet réaliser lors de ma formation OpenClassroom.",
     "description":"La mission consitais à créer une application web de location d'hôtels",
     "images":"/images/Booki.webp",
+    "github":"https://github.com/TristanMauer/Projet-2-OC",
     "pictures": [
         "/images/Booki_carousel.webp",
         "/images/Booki_carousel2.webp"
@@ -27,6 +28,7 @@
         "/images/sophie_carousel2.webp",
         "/images/sophie_carousel3.webp"
     ],
+    "github":"https://github.com/TristanMauer/Projet-OC-3",
     "categoryId":1,
     "tags":["HTML",
             "CSS",
@@ -45,6 +47,7 @@
         "/images/nina_carousel3.webp",
         "/images/nina_carousel4.webp"
     ],
+    "github":"https://github.com/TristanMauer/nina-carducci",
     "categoryId":1,
     "tags": [
         "HTML",
@@ -65,6 +68,7 @@
         "/images/kasa_carousel2.webp",
         "/images/kasa_carousel3.webp"
     ],
+    "github":"https://github.com/TristanMauer/Projet-6-Kasa",
     "categoryId":2,
     "tags":["REACT",
             "SASS"]
@@ -81,6 +85,7 @@
         "/images/mvg_carousel2.webp",
         "/images/mvg_carousel3.webp"
     ],
+    "github":"https://github.com/TristanMauer/Projet-7-Mon-Vieux-Grimoire",
     "categoryId":3,
     "tags": [
         "NODE",

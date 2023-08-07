@@ -75,7 +75,11 @@
 
   @media screen and (max-width:767px) {
     width: 80%;
-    height:600px ;
+    
+  }
+  @media screen and (max-width:650px) {
+    width: 80%;
+    height: 600px;
     
   }
   
@@ -96,6 +100,9 @@ top: 15px;
   font-size: 20px; 
 }
 
+.modal-texte{
+  margin-bottom: 1em;
+}
 
 
 .modal-contenu{
@@ -124,4 +131,27 @@ top: 15px;
   padding: 0.3125rem 1rem 0.25rem;
   margin: 0 1em 1em 0;
   border-radius: 15px;
+
+  @media screen and (max-width:500px) {
+    font-size: 12px;
+  }
+}
+
+.modal_icon{
+  color:  $color-quinternary;
+  font-size: 40px;
+  background: none;
+  border: none;
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+
+  @media screen and (max-width:500px) {
+    font-size: 30px;
+  }
+}
+.modal_icon:hover{
+  cursor: pointer;
+  background:none;
+  color: $color-secondary;
 }
